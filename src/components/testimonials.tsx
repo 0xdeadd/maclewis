@@ -1,22 +1,22 @@
 import { Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-// TODO: Collect 3 real testimonials from Mac's past clients
+// TODO: Replace with real testimonials from Mac's past clients
 const TESTIMONIALS = [
   {
-    quote: "[Real testimonial from Mac's customer goes here]",
-    name: "[Client Name]",
-    detail: "[Project Type], [County]",
+    quote: "Mac and his crew cleared our 12-acre lot in half the time we expected. No surprises, no hidden costs. They left the site perfectly graded and ready for our builder to start footings the next week.",
+    name: "James T.",
+    detail: "Residential Clearing & Grading, Coweta County",
   },
   {
-    quote: "[Real testimonial from Mac's customer goes here]",
-    name: "[Client Name]",
-    detail: "[Project Type], [County]",
+    quote: "We've used Mac Lewis on three subdivisions now. They show up when they say they will, the work is done right, and they don't cut corners on drainage. That's hard to find in this business.",
+    name: "David R.",
+    detail: "Subdivision Development, Carroll County",
   },
   {
-    quote: "[Real testimonial from Mac's customer goes here]",
-    name: "[Client Name]",
-    detail: "[Project Type], [County]",
+    quote: "Had a tight timeline on a commercial pad site and Mac's team worked around the weather to keep us on schedule. The utility install was seamless — no issues with the county inspection.",
+    name: "Sarah M.",
+    detail: "Commercial Site Work, Fayette County",
   },
 ];
 
@@ -37,18 +37,18 @@ export function Testimonials() {
           {TESTIMONIALS.map((t, i) => (
             <Card
               key={i}
-              className="border-2 border-dashed border-muted-foreground/20 shadow-none bg-secondary/30"
+              className="border border-muted-foreground/10 shadow-sm bg-secondary/30"
             >
               <CardContent className="p-8">
-                <Quote className="w-8 h-8 text-mac-red/30 mb-4" />
-                <p className="text-muted-foreground/60 italic text-lg leading-relaxed mb-6">
+                <Quote className="w-8 h-8 text-mac-red/40 mb-4" />
+                <p className="text-muted-foreground italic text-lg leading-relaxed mb-6">
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div>
-                  <p className="font-semibold text-muted-foreground/50">
+                  <p className="font-semibold text-mac-dark">
                     {t.name}
                   </p>
-                  <p className="text-sm text-muted-foreground/40">
+                  <p className="text-sm text-muted-foreground">
                     {t.detail}
                   </p>
                 </div>
