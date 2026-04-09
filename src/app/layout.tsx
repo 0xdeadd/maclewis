@@ -90,9 +90,7 @@ export default function RootLayout({
               ],
               description:
                 "Professional clearing, grading, utilities, and concrete services in West Georgia.",
-              // TODO: Replace with real logo URL
-              image:
-                "https://placehold.co/400x400/1a1a1a/ffffff?text=ML",
+              image: "/logo.png",
             }),
           }}
         />

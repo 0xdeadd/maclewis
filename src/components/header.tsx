@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Phone, Menu, X } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -38,16 +39,14 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
-          <div
-            className={`font-heading font-bold tracking-tight text-white transition-all duration-300 ${
-              scrolled ? "text-xl" : "text-2xl"
-            }`}
-          >
-            <span className="text-mac-red">MAC LEWIS</span>
-            <span className="block text-xs tracking-[0.2em] font-sans font-normal text-white/80">
-              CLEARING & GRADING
-            </span>
-          </div>
+          <Image
+            src="/logo.png"
+            alt="Mac Lewis Clearing and Grading, LLC"
+            width={scrolled ? 180 : 240}
+            height={scrolled ? 90 : 120}
+            className="transition-all duration-300 object-contain"
+            priority
+          />
         </a>
 
         {/* Desktop Nav */}
