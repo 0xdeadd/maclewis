@@ -4,9 +4,9 @@ import { Shield, MapPin, Clock, Users } from "lucide-react";
 const STATS = [
   {
     icon: Clock,
-    value: "[X]+",
+    value: "30+",
     label: "Years Experience",
-    placeholder: true,
+    placeholder: false,
   },
   {
     icon: Shield,
@@ -22,9 +22,9 @@ const STATS = [
   },
   {
     icon: Users,
-    value: "[X]+",
+    value: "500+",
     label: "Projects Completed",
-    placeholder: true,
+    placeholder: false,
   },
 ];
 
