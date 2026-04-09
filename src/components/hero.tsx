@@ -13,8 +13,8 @@ export function Hero() {
       {/* Background Image */}
       {/* TODO: Replace with real hero image — aerial job site or excavator at work */}
       <Image
-        src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1920&q=80"
-        alt="Excavator on a construction site"
+        src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=1920&q=80"
+        alt="Bulldozer grading a construction site"
         fill
         className="object-cover"
         priority
