@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mac Lewis Clearing and Grading, LLC
 
-## Getting Started
+Marketing website for Mac Lewis Clearing and Grading — a West Georgia site development contractor.
 
-First, run the development server:
+## Stack
+
+- **Next.js 15** (App Router) + TypeScript
+- **Tailwind CSS v4**
+- **shadcn/ui** components
+- Deployed on **Vercel**
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# One-command deploy
+npx vercel --prod
+```
 
-## Learn More
+Or connect the GitHub repo to Vercel for automatic deploys on push.
 
-To learn more about Next.js, take a look at the following resources:
+## Before Launch
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+See [TODO.md](./TODO.md) for a full checklist of placeholders to replace (photos, phone number, email, logo, etc.).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/
+│   ├── api/quote/route.ts   # Quote form handler (wire to email service)
+│   ├── globals.css           # Theme + Tailwind config
+│   ├── layout.tsx            # Root layout, fonts, SEO, structured data
+│   └── page.tsx              # Single-page layout
+├── components/
+│   ├── about.tsx             # About / trust section
+│   ├── contact.tsx           # Quote request form
+│   ├── footer.tsx            # Footer
+│   ├── gallery.tsx           # Project photo grid
+│   ├── header.tsx            # Sticky header + mobile nav
+│   ├── hero.tsx              # Hero with CTA
+│   ├── service-area.tsx      # Counties served
+│   └── services.tsx          # Service cards
+└── lib/
+    └── utils.ts              # shadcn utilities
+```
