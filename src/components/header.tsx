@@ -46,7 +46,7 @@ export function Header() {
             height={300}
             className={`transition-all duration-300 object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] ${
               scrolled
-                ? "w-[80px] sm:w-[100px] md:w-[120px]"
+                ? "w-[50px] sm:w-[70px] md:w-[120px]"
                 : "w-[120px] sm:w-[180px] md:w-[250px]"
             } h-auto`}
             priority
