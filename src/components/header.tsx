@@ -40,11 +40,15 @@ export function Header() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
           <Image
-            src="/logo-cropped.png"
+            src="/logo.png"
             alt="Mac Lewis Clearing and Grading, LLC"
-            width={scrolled ? 120 : 300}
-            height={scrolled ? 76 : 189}
-            className="transition-all duration-300 object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.8)]"
+            width={300}
+            height={300}
+            className={`transition-all duration-300 object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] ${
+              scrolled
+                ? "w-[80px] sm:w-[100px] md:w-[120px]"
+                : "w-[120px] sm:w-[180px] md:w-[250px]"
+            } h-auto`}
             priority
           />
         </a>
