@@ -30,21 +30,21 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-visible ${
         scrolled
-          ? "bg-mac-dark/95 backdrop-blur-sm shadow-lg py-2"
-          : "bg-transparent py-4"
+          ? "bg-mac-dark/95 backdrop-blur-sm shadow-lg py-1"
+          : "bg-transparent py-1"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
           <Image
-            src="/logo.png"
+            src="/logo-cropped.png"
             alt="Mac Lewis Clearing and Grading, LLC"
-            width={scrolled ? 180 : 240}
-            height={scrolled ? 90 : 120}
-            className="transition-all duration-300 object-contain"
+            width={scrolled ? 120 : 300}
+            height={scrolled ? 76 : 189}
+            className="transition-all duration-300 object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.8)]"
             priority
           />
         </a>
