@@ -1,27 +1,30 @@
 import { Shield, MapPin, Clock, Users } from "lucide-react";
 
+// TODO: Replace with real numbers from Mac
 const STATS = [
   {
     icon: Clock,
-    // TODO: Replace with actual years in business
-    value: "10+",
+    value: "[X]+",
     label: "Years Experience",
+    placeholder: true,
   },
   {
     icon: Shield,
     value: "Licensed",
     label: "& Fully Insured",
+    placeholder: false,
   },
   {
     icon: MapPin,
     value: "West GA",
     label: "Locally Owned",
+    placeholder: false,
   },
   {
     icon: Users,
-    // TODO: Replace with actual number
-    value: "500+",
+    value: "[X]+",
     label: "Projects Completed",
+    placeholder: true,
   },
 ];
 
@@ -64,10 +67,18 @@ export function About() {
             {STATS.map((stat) => (
               <div
                 key={stat.label}
-                className="bg-white/5 border border-white/10 rounded-lg p-6 text-center"
+                className={`bg-white/5 rounded-lg p-6 text-center ${
+                  stat.placeholder
+                    ? "border-2 border-dashed border-white/20"
+                    : "border border-white/10"
+                }`}
               >
                 <stat.icon className="w-8 h-8 text-mac-yellow mx-auto mb-3" />
-                <div className="font-heading text-3xl font-bold text-white">
+                <div
+                  className={`font-heading text-3xl font-bold ${
+                    stat.placeholder ? "text-white/40" : "text-white"
+                  }`}
+                >
                   {stat.value}
                 </div>
                 <div className="text-white/50 text-sm mt-1">{stat.label}</div>
