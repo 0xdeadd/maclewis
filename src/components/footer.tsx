@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 // TODO: Replace with real contact info
-const PHONE = "770-555-0100";
+const PHONE = "770-328-4984";
 const EMAIL = "info@maclewisgrading.com";
 
 const SERVICE_LINKS = [

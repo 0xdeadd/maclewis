@@ -71,7 +71,7 @@ export default function RootLayout({
               // TODO: Replace with real URL
               url: "https://maclewisgrading.com",
               // TODO: Replace with real phone
-              telephone: "+1-770-555-0100",
+              telephone: "+1-770-328-4984",
               // TODO: Replace with real email
               email: "info@maclewisgrading.com",
               address: {

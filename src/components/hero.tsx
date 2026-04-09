@@ -4,7 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 // TODO: Replace with real phone number
-const PHONE = "770-555-0100";
+const PHONE = "770-328-4984";
 const PHONE_HREF = `tel:+1${PHONE.replace(/-/g, "")}`;
 
 export function Hero() {
