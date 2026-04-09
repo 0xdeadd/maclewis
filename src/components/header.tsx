@@ -32,8 +32,8 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-visible ${
         scrolled
-          ? "bg-mac-dark/95 backdrop-blur-sm shadow-lg py-1"
-          : "bg-transparent py-1"
+          ? "bg-mac-dark/95 backdrop-blur-sm shadow-lg py-0"
+          : "bg-transparent py-0"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -46,8 +46,8 @@ export function Header() {
             height={300}
             className={`transition-all duration-300 object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] ${
               scrolled
-                ? "w-[50px] sm:w-[70px] md:w-[120px]"
-                : "w-[120px] sm:w-[180px] md:w-[250px]"
+                ? "w-[50px] sm:w-[70px] md:w-[80px]"
+                : "w-[120px] sm:w-[150px] md:w-[160px]"
             } h-auto`}
             priority
           />
