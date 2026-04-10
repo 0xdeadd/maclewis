@@ -1,36 +1,36 @@
 import Image from "next/image";
 
-// TODO: Replace ALL placeholder images with real project photos
+// TODO: Replace with real project photos from Mac
 const PROJECTS = [
   {
-    src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80",
-    alt: "Excavator clearing land",
-    label: "Land Clearing — Coweta County",
+    src: "https://images.pexels.com/photos/1579356/pexels-photo-1579356.jpeg?auto=compress&w=600",
+    alt: "Aerial view of excavator and bulldozer grading a site",
+    label: "Site Grading — Coweta County",
   },
   {
-    src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
-    alt: "Construction site grading work",
-    label: "Site Grading — Newnan, GA",
+    src: "https://images.pexels.com/photos/13923406/pexels-photo-13923406.jpeg?auto=compress&w=600",
+    alt: "Bulldozer grading a cleared field",
+    label: "Land Clearing — Newnan, GA",
   },
   {
-    src: "https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80",
-    alt: "Utility trenching",
-    label: "Utility Installation — Peachtree City",
+    src: "https://images.pexels.com/photos/8809464/pexels-photo-8809464.jpeg?auto=compress&w=600",
+    alt: "CAT motor grader leveling a dirt road",
+    label: "Road Grading — Carroll County",
   },
   {
-    src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
-    alt: "Concrete foundation pour",
-    label: "Commercial Foundation — Carroll County",
+    src: "https://images.pexels.com/photos/1116035/pexels-photo-1116035.jpeg?auto=compress&w=600",
+    alt: "Loader moving dirt on a construction site",
+    label: "Earthwork — Heard County",
   },
   {
-    src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=80",
-    alt: "Heavy equipment on site",
-    label: "Subdivision Development — Heard County",
+    src: "https://images.pexels.com/photos/259966/pexels-photo-259966.jpeg?auto=compress&w=600",
+    alt: "Close up of yellow CAT bulldozer tracks in mud",
+    label: "Heavy Equipment — Fayette County",
   },
   {
-    src: "https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=600&q=80",
-    alt: "Finished graded lot",
-    label: "Residential Pad — Fayette County",
+    src: "https://images.pexels.com/photos/12236053/pexels-photo-12236053.jpeg?auto=compress&w=600",
+    alt: "Aerial view of bulldozer cutting a road through terrain",
+    label: "Subdivision Development — Troup County",
   },
 ];
 
